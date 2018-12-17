@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UserApiController {
+    CameraUtils cameraUtils = new CameraUtils();
 
     @GetMapping("/user")
     @ResponseBody
@@ -14,6 +15,6 @@ public class UserApiController {
     }
 
     public UserData getUserData() {
-        return new UserData("Michael");
+        return new UserData("Michael", cameraUtils.takePhoto());
     }
 }
