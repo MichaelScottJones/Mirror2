@@ -29,5 +29,5 @@ function userCallback(data) {
     }
     var name = data.name === '' ? "" : ", " + data.name;
     document.getElementById("labelName").firstChild.nodeValue = "Good " + time + name;
-    document.getElementById("img").src = data.imgPath;
+    document.getElementById("img").src = "/img/" + data.imgPath;
 }

@@ -5,7 +5,7 @@ import com.hopding.jrpicam.exceptions.FailedToRunRaspistillException;
 
 public class CameraUtils {
     private RPiCamera piCamera;
-    private final String imgPath = "/home/pi/Pictures";
+    private final String imgPath = "/home/pi/Documents/Mirror2/src/main/resources/static/img";
     private final String img = "face.jpg";
 
     public CameraUtils() {
@@ -27,7 +27,7 @@ public class CameraUtils {
             System.out.println("ERROR: Couldn't take a picture");
             return "";
         }
-        return imgPath + "/" + img;
+        return img;
     }
 
 
