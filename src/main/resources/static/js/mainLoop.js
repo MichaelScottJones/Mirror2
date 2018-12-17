@@ -3,6 +3,7 @@ function mainLoop() {
     updateTime();
     updateBusTime();
     updateWeather();
+    updateUser();
 }
 
 var x = setTimeout(mainLoop, 1000);
