@@ -15,6 +15,6 @@ public class UserApiController {
     }
 
     public UserData getUserData() {
-        return new UserData("Michael", cameraUtils.takePhoto());
+        return new UserData("Michael");
     }
 }
